@@ -1,5 +1,7 @@
 const API_KEY="712bd472ff2a458cbb97b56c3729dd47";
-const url="https://newsapi.org/v2/everything?q=";
+const proxyUrl = "https://cors-anywhere.herokuapp.com/"
+
+const url="${proxyUrl}https://newsapi.org/v2/everything?q=";
 
 window.addEventListener('load',()=> fetchNews("India"));
 async function fetchNews (query){
