@@ -5,7 +5,7 @@ const url="${proxyUrl}https://newsapi.org/v2/everything?q=";
 
 window.addEventListener('load',()=> fetchNews("India"));
 async function fetchNews (query){
-    const res= await fetch(`${url}${query}&apikey=${API_KEY}`);
+    const res= await fetch(`${proxyUrl}${url}${query}&apikey=${API_KEY}`);
     const data=await res.json();
     console.log(data);
     bindData(data.articles);
