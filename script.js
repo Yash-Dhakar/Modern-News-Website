@@ -1,5 +1,6 @@
 const API_KEY="712bd472ff2a458cbb97b56c3729dd47";
-const proxyUrl = "https://cors-anywhere.herokuapp.com/"
+const proxyUrl = "https://cors-anywhere.herokuapp.com/";
+console.log("Its working");
 
 const url=`${proxyUrl}https://newsapi.org/v2/everything?q=`;
 
